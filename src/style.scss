@@ -1,0 +1,51 @@
+@import 'variables';
+@import '~bulma/bulma';
+
+// HEADER
+.header {
+	margin: $gap/2 0;
+}
+
+.navbar-item {
+	font-weight: 700;
+}
+
+// BOX
+.box {
+	padding: $gap;
+}
+
+// LEVEL
+.level .field {
+	margin-bottom: 0;
+}
+
+// ARTICLE
+.article-object {
+	border-bottom: solid 1px $grey-lighter;
+	padding: $gap 0;
+}
+
+// UTILITIES
+.valign {
+	display: flex;
+	> .is-middle {
+		align-self: center;
+	}
+	> .is-bottom {
+		align-self: flex-end;
+	}
+}
+
+.blue {
+	color: $blue !important;
+}
+
+// LAYOUT
+
+.is-reverse-tablet	{
+	@media screen and (min-width: $tablet), print {
+		flex-direction: row-reverse;
+	}
+}
+
