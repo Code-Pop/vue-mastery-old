@@ -3,8 +3,8 @@
 			<article class="columns article-object">
 				<div class="column is-two-thirds">
 					<a href="javascript:;">
-						<h3 class="title is-3 is-spaced">How to: Vue Router</h3>
-						<p class="subtitle">Description of article goes here and describes what the reader can expect about the article and stuff and more and even more stuff.</p>
+						<h3 class="title is-3 is-spaced">{{story.title}}</h3>
+						<p class="subtitle">{{story.description}}</p>
 						<span class="tag">Opinion</span>
 						<span>by</span>
 						<span>Michele Gorsecht</span>
@@ -22,6 +22,7 @@
 </template>
 <script>
   export default {
-    name: 'NewsStory'
+    name: 'NewsStory',
+    props: ['story']
   }
 </script>
