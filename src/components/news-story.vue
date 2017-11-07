@@ -1,25 +1,24 @@
 <template>
-<!-- Article component -->
-			<article class="columns article-object">
-				<div class="column is-two-thirds">
-					<a href="javascript:;">
-						<h3 class="title is-3 is-spaced">{{story.title}}</h3>
-						<p class="subtitle">{{story.description}}</p>
-						<span class="tag">Opinion</span>
-						<span>by</span>
-						<span>Michele Gorsecht</span>
-					</a>
-				</div>
-				<div class="column is-one-quarter">
-					<a href="javascript:;">
-						<figure class="image is-3by2">
-							<img src="https://via.placeholder.com/480x320" alt="">
-						</figure>
-					</a>
-				</div>
-			</article>
-			<!--/ End article component -->
+	<article v-if="story.featured == true" class="columns article-object" style="padding-left: 1rem;">
+		<div class="column is-two-thirds">
+			<a :href="story.url" target="_blank">
+				<h3 class="title is-3 is-spaced">{{story.title}}</h3>
+				<p class="subtitle">{{story.description}}</p>
+				<span class="tag">{{story.category}}</span>
+				<span>by</span>
+				<span>{{story.author}}</span>
+			</a>
+		</div>
+		<div v-if="story.image !== ''" class="column is-one-quarter">
+			<a :href="story.url" target="_blank">
+				<figure class="image is-3by2">
+					<img :src="story.image" alt="">
+				</figure>
+			</a>
+		</div>
+	</article>
 </template>
+
 <script>
   export default {
     name: 'NewsStory',

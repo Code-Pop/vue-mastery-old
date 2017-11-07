@@ -2,12 +2,14 @@
    <div>
     <hero-banner />
     <news-issue />
-    <news-issue />
-    <news-issue />
-	
 
-	<section class="section">
+	<section class="section" style="padding-top: 0rem;">
 		<div class="container">
+
+			<div class="container" style="padding-bottom: 30px;">
+				<a class="button is-primary is-large" style="margin-right: .3rem">View Full Post</a>
+				<a class="button is-primary is-outlined is-large">View Previous Posts</a>
+			</div>	
 
 			<div class="box level">
 				<div class="level-item is-narrow">
@@ -36,7 +38,7 @@
 	</section>
 	<!-- email card ends -->
 
-	<section class="section">
+	<!-- <section class="section">
 		<div class="container">
 			<nav class="pagination is-right" role="navigation" aria-label="pagination">
 				<a class="pagination-previous">Previous</a>
@@ -52,7 +54,7 @@
 				</ul>
 			</nav>
 		</div>
-	</section>
+	</section> -->
 	<!-- pagination ends -->
 
 	<footer class="footer">

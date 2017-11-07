@@ -1,9 +1,16 @@
 <template>
-    <h2>News Page!</h2>
+  <news-issue />
+
 </template>
 
 <script>
+import NewsIssue from '@/components/news-issue'
+
 export default {
+  components: {
+    NewsIssue
+  },
   name: 'News'
 }
 </script>
+
