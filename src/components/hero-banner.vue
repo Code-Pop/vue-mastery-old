@@ -35,6 +35,8 @@
 	</section>
 </template>
 
+<script>
 export default {
-    name: "NavBar"
+  name: 'HeroBanner'
 }
+</script>

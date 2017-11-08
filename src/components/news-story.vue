@@ -17,11 +17,21 @@
 			</a>
 		</div>
 	</article>
+	<article v-else-if="full"> 
+		<div class="column is-two-thirds">
+			<a :href="story.url" target="_blank">
+				<h3 class="title is-4 is-spaced">{{story.title}}</h3>
+				<span class="tag">{{story.category}}</span>
+				<span>by</span>
+				<span>{{story.author}}</span>
+			</a>
+		</div>
+	</article>
 </template>
 
 <script>
   export default {
     name: 'NewsStory',
-    props: ['story']
+    props: ['story', 'full']
   }
 </script>
