@@ -10,7 +10,7 @@
 				<router-link to="/news">
 					<a class="button is-primary is-large" style="margin-right: .3rem">View Full Post</a>
 				</router-link>
-				<router-link to="/news#previous">
+				<router-link to="/news#1">
 					<a class="button is-primary is-outlined is-large">View Previous Post</a>
 				</router-link>
 			</div>	

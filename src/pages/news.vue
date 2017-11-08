@@ -1,9 +1,7 @@
 <template>
   <div>
-    <news-issue v-for="newsPost in newsIssues " :newsPost="newsPost" :key="newsPost.id" :data="newsPost" :full="true" />
-    <!-- <news-story v-for="storyItem in data.stories" :story="storyItem" :key="storyItem.id" :full="full" /> -->
-
-    <a id="anchor" name="previous"></a>
+    <news-issue v-for="(newsPost, index) in newsIssues" :newsPost="newsPost" :key="newsPost.id" :data="newsPost" name="index" :full="true" />
+    <!-- <a id="anchor" name="previous"></a> -->
   </div>
 </template>
 
