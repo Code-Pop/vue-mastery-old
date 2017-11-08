@@ -15,7 +15,8 @@
 
 				<p>Produced by Gregg Pollack &amp; Adam Jahr</p>
 				</div>
-				<div class='column'>
+        <podcast :newsIssue="newsIssue" />
+				<!-- <div class='column'>
 					<div class='box content'>
 						<h4 class='title is-5'>Listen to the Vue Podcast</h4>
 						<audio controls>
@@ -24,7 +25,7 @@
 						<p>Adam &amp; Gregg discuss weekly Vue news.</p>
 						<a class='button is-link' href='javascript:;'>Subscribe on iTunes</a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
@@ -37,12 +38,15 @@
 
 <script>
 import NewsStory from '@/components/news-story'
+import Podcast from '@/components/podcast'
 
 export default {
   components: {
-    NewsStory
+    NewsStory,
+    Podcast
   },
   name: 'NewsIssue',
+
   data () {
     return {
       newsIssue: {

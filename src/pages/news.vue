@@ -1,6 +1,10 @@
 <template>
-  <news-issue />
-
+  <div>
+    <news-issue />
+    <news-issue />
+    <news-issue />
+    <news-issue />
+  </div>
 </template>
 
 <script>

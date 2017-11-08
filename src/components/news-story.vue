@@ -1,5 +1,5 @@
 <template>
-	<article v-if="story.featured == true" class="columns article-object" style="padding-left: 1rem;">
+	<article v-if="story.featured" class="columns article-object" style="padding-left: 1rem;">
 		<div class="column is-two-thirds">
 			<a :href="story.url" target="_blank">
 				<h3 class="title is-3 is-spaced">{{story.title}}</h3>
