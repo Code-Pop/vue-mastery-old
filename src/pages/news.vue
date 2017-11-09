@@ -1,16 +1,25 @@
 <template>
   <div>
+    <section class="hero is-primary is-bold">
+		  <div class="hero-body">
+			  <div class="container">
+          <h1 class="title is-2">Vue News Weekly</h1>
+        </div>
+      </div>
+    </section>
     <news-issue v-for="(newsPost, index) in newsIssues" :newsPost="newsPost" :key="newsPost.id" :data="newsPost" name="index" :full="true" />
-    <!-- <a id="anchor" name="previous"></a> -->
+    <site-footer />
   </div>
 </template>
 
 <script>
 import NewsIssue from '@/components/news-issue'
+import SiteFooter from '@/components/site-footer'
 
 export default {
   components: {
-    NewsIssue
+    NewsIssue,
+    SiteFooter
   },
   name: 'News',
   data () {
@@ -18,7 +27,7 @@ export default {
       newsIssues: [
         {
           id: 1,
-          title: 'Newsletter Weekly 1',
+          title: 'News - Issue 2',
           description: 'In this episode we cover ducks, chickens, turkeys, and the new version of moose.',
           published_on: new Date().toString().split(' ').splice(0, 4).join(' '),
           audio_file: './static/drum.mp3',
@@ -111,7 +120,7 @@ export default {
         }, // end
         {
           id: 2,
-          title: 'Newsletter Weekly 2',
+          title: 'News - Issue 1',
           description: 'In this episode we cover ducks, chickens, turkeys, and the new version of moose.',
           published_on: new Date().toString().split(' ').splice(0, 4).join(' '),
           audio_file: './static/drum.mp3',

@@ -8,10 +8,10 @@
 
 			<div class="container" style="padding-bottom: 30px;">
 				<router-link to="/news">
-					<a class="button is-primary is-large" style="margin-right: .3rem">View Full Post</a>
+					<a class="button is-primary is-large" style="margin-right: .3rem; margin-top: 10px;">View Full Issue</a>
 				</router-link>
 				<router-link to="/news#1">
-					<a class="button is-primary is-outlined is-large">View Previous Post</a>
+					<a class="button is-primary is-outlined is-large" style="margin-top: 10px;">Previous Issues</a>
 				</router-link>
 			</div>	
 
@@ -43,7 +43,7 @@ export default {
     return {
       newsIssue: {
         id: 1,
-        title: 'Newsletter Weekly',
+        title: 'Vue News',
         description: 'In this episode we cover ducks, chickens, turkeys, and the new version of moose.',
         published_on: new Date().toString().split(' ').splice(0, 4).join(' '),
         audio_file: './static/drum.mp3',

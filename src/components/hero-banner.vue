@@ -27,7 +27,7 @@
 								<a class="button is-text" href="javascript:;">Subscribe to our podcast on iTunes</a>
 							</div>
 						</div>
-						<a class="white" href="javascript:;">Want to submit a contribution?</a>
+						<a class="white" href="https://goo.gl/forms/AIKdWZLDtPmiPMIh2" target="blank">Want to submit a contribution?</a>
 					</div>
 				</div>
 			</div>
