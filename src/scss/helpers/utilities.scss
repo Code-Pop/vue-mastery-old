@@ -1,0 +1,10 @@
+// UTILITIES
+.valign {
+	display: flex;
+	> .is-middle {
+		align-self: center;
+	}
+	> .is-bottom {
+		align-self: flex-end;
+	}
+}

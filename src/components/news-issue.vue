@@ -1,7 +1,7 @@
 <template>
 	<section class='section'>
 		<div class='container'>
-			<div class='columns article-object'>
+			<div class='columns news-issue'>
 				<div class='column is-two-thirds'>
 					<div class='columns is-reverse-tablet'>
 						<div class='column is-narrow'>
@@ -22,7 +22,7 @@
 		<div class='container'>
 			<news-story v-for="storyItem in data.stories" :story="storyItem" :key="storyItem.id" :full="full" />
 		</div>
-        
+
 	</section>
 </template>
 

@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="columns">
 			<div class="column">
-					<h1 class="title is-1">Who We Are</h1>
+					<h1 class="title is-1 has-text-primary is-spaced">Who We Are</h1>
 					<p class="subtitle">Gregg Pollack &amp; Adam Jahr are passionate about teaching programming online. Gregg previously founded Code School, and Adam previously taught at The Iron Yard. Vue Mastery is a brand of <a href="javascript:;">Code Pop</a>, whose mission is to popularize open source technologies.</p>
 					<div class="content">
 						<h2 class="title is-3">Contact Us</h2>
@@ -44,7 +44,3 @@ export default {
   name: 'About'
 }
 </script>
-
-
-
-

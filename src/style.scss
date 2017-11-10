@@ -1,14 +1,24 @@
-@import 'variables';
+// Global Variables
+@import 'scss/global/variables';
+
+// Vendor Styles
 @import '~bulma/bulma';
 
-// HEADER
-.header {
-	margin: $gap/2 0;
-}
+// Global Files
+@import 'scss/global/layout';
 
-.navbar-item {
-	font-weight: 700;
-}
+// Components
+@import 'scss/components/nav-bar';
+@import 'scss/components/news-issue';
+@import 'scss/components/news-story';
+
+// Helpers
+@import 'scss/helpers/utilities';
+
+
+
+
+// OVERRIDES
 
 // BOX
 .box {
@@ -22,29 +32,9 @@
 
 // ARTICLE
 .article-object {
-	padding: $gap 0;
-}
-
-// UTILITIES
-.valign {
-	display: flex;
-	> .is-middle {
-		align-self: center;
-	}
-	> .is-bottom {
-		align-self: flex-end;
-	}
+	padding: $gap 0 $gap $gap;
 }
 
 .blue {
 	color: $blue !important;
 }
-
-// LAYOUT
-
-.is-reverse-tablet	{
-	@media screen and (min-width: $tablet), print {
-		flex-direction: row-reverse;
-	}
-}
-

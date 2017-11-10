@@ -1,0 +1,6 @@
+// LAYOUT
+.is-reverse-tablet	{
+	@media screen and (min-width: $tablet), print {
+		flex-direction: row-reverse;
+	}
+}
