@@ -5,7 +5,7 @@
 			<div class="columns">
 				<div class="column valign">
 					<div class="is-middle">
-						<h1 class="title is-1">Why Learn Vue?</h1>
+						<h1 class="title has-text-primary is-1 is-spaced">Why Learn Vue?</h1>
 						<p class="subtitle">We worked closely with the Vue core team to develop this video that shows the magical features of this JS framework.</p>
 					</div>
 				</div>
@@ -36,7 +36,7 @@
 							<div class="control">
 								<button class="button is-link is-medium">Subscribe</button>
 							</div>
-                        </div>
+            </div>
 					</div>
 				</div>
 			</div>

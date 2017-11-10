@@ -1,5 +1,5 @@
 <template>
-	<article v-if="story.featured" class="columns article-object" style="padding-left: 1rem;">
+	<article v-if="story.featured" class="columns news-story">
 		<div class="column is-two-thirds">
 			<a :href="story.url" target="_blank">
 				<h3 class="title is-3 is-spaced">{{story.title}}</h3>
@@ -17,7 +17,7 @@
 			</a>
 		</div>
 	</article>
-	<article v-else-if="full"> 
+	<article v-else-if="full">
 		<div class="column is-two-thirds">
 			<a :href="story.url" target="_blank">
 				<h3 class="title is-4 is-spaced">{{story.title}}</h3>
